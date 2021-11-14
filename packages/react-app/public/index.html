@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-eth-app"
+    />
+
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Sacbe Polygon DApp Ecosystem</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+
+    <script type="text/javascript">
+      // Gets BTC Price in 3 currencies
+    getData('btc', 'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR,');
+
+    // Gets ETH Price in 3 currencies
+    getData('eth', 'https://min-api.cryptocompare.com/data/price?fsym=MATIC&tsyms=USD,EUR,');
+
+    function getData(prefix, url) {
+      $.getJSON(url, function(data) {
+        $.each(data, function(key, val) {
+          $('.' + prefix + '-' + key.toLowerCase()).html(val);
+        });
+      });
+    }
+
+
+
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+              <div class="logo-menu">
+                 <img src="sacbe-white.png" >
+              </div>
+
+
+
+   <div class="col pt-3">
+
+                <div id="root" class="float-right"></div>
+
+            <!--
+              This HTML file is a template.
+              If you open it directly in the browser, you will see an empty page.
+
+              You can add webfonts, meta tags, or analytics to this file.
+              The build step will place the bundled scripts into the <body> tag.
+
+              To begin the development, run `npm start` or `yarn start`.
+              To create a production bundle, use `npm run build` or `yarn build`.
+            -->
+
+
+
+ <ul class="nav nav-pills pt-5" id="pills-tab" role="tablist">
+      <li class="nav-item">
+    <a class="nav-link" id="pills-spot-tab" data-toggle="pill" href="#pills-spot" role="tab" aria-controls="pills-spot" aria-selected="false"><i class="fas fa-vote-yea"></i> Projects</a>
+  </li>
+
+    <li class="nav-item">
+    <a class="nav-link active" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fas fa-donate"></i> Support</a>
+  </li>
+
+    <li class="nav-item">
+    <a class="nav-link" id="pills-swap-tab" data-toggle="pill" href="#pills-swap" role="tab" aria-controls="pills-swap" aria-selected="false">
+    <i class="fas fa-exchange-alt"></i> Swapper</a>
+  </li>
+
+
+
+  <li class="nav-item">
+    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-dollar-sign"></i> Prices</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="far fa-chart-bar"></i> Chart</a>
+  </li>
+
+
+
+</ul>
+
+<div class="tab-content" id="pills-tabContent">
+
+   <div class="tab-pane fade text-center active show" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <video autoplay muted>
+      <source src="school.mp4" type="video/mp4">
+
+    Your browser does not support the video tag.
+    </video>
+    <h1>Sacbe Ecosystem</h1>
+    <h2>Helping Communities and Investing</h2>
+    <section class="moreinfo">
+      <h2>Human Basic Needs</h2>
+        <p>Education, health, infrastructure, outdoor activities, basic needs financial funds are some of the categories where sacbe comes into play with the power and transparency of the polygon blockchain.</p>
+        <p>Sacbe token is a crypto currency that aims to better communities, by managing simple projects.
+    The Sacbe Portal is an easy to use ecosystem, where investors can have a say, see the process, and progress in where their
+    money goes. With a simple vote, people can help communities in need. </p>
+
+        <p>With the power and technology of the Polygon blockchain, our system allows people the ability
+    to help fulfill basic human needs in an array of communities.</p>
+
+        <h3 class="howorks mt-3">How it works?</h3>
+        <h4>Scouting - Planning - Development - Delivery</h4>
+        <p>Our sacbe scout agents are one of the main core of the project, their responsability is to find communities with an infrastructure need. </p>
+
+
+        <h3 class="mile mt-5 pt-5">2021 Roadmap</h3>
+        <div class="row mt-5 pt-5">
+
+          <div class="col-lg-3">
+
+            <h3>Q1</h3>
+            <p>Research and Developing V1 sacbe.co/ecosystem<br>
+              Financial Funding <br>
+
+            </p>
+          </div>
+          <div class="col-lg-3">
+                        <h3>Q2</h3>
+            <p>Developing pilot project<br>
+              Integration of V2 ecosystem<br>
+            
+          </div>
+          <div class="col-lg-3">
+             <h3>Q3</h3>
+                        <p>Delivery pilot project<br>
+              Integration of V3 ecosystem<br>
+          </div>
+          <div class="col-lg-3">
+             <h3>Q4 - 2022 Q-2</h3>
+                        <p>Developing pilot project #2<br>
+              Integration of V3 ecosystem<br>
+              Tokenomics
+          </div>
+
+         </div>
+        <h3>White paper</h3>
+         <p>Coming Soon...</p>
+     </section>   
+  </div>
+
+  <div class="tab-pane fade " id="pills-swap" role="tabpanel" aria-labelledby="pills-swap">
+
+              <section>
+                <div class="content-inputs pb-4">
+          
+                    <div class="col-coins">
+                        <label> Matic Price: $ <span class="eth-usd"></span></label>
+                        <div class="coinx">
+                                       
+                        </div>
+
+                        <label>Select Token</label>
+
+                        <div class="coinx">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.8 43.6"><path d="M18.9 0l-4 2.3L4 8.6l-4 2.3V32.7L4 35l11 6.3 4 2.3 4-2.3L33.8 35l4-2.3V10.9l-4-2.3-10.9-6.3-4-2.3zM8 28.1V15.5l10.9-6.3 10.9 6.3v12.6l-10.9 6.3L8 28.1z" fill="#fff"/></svg>
+                        </div>
+                           
+                      </div>    
+                  <div class="col-parties">
+                        <label>From</label>
+                        <input type="text" class="" name="" placeholder="0.0"> 
+
+                        <label>To </label>
+                        <input type="text" class="" name="" placeholder="0.0"><br><br>
+
+                         
+                           
+                      </div>      
+                      <div>
+                         <a href="swap" class="btn">Swap</a>
+                      </div>  
+                </div>
+              </section>
+  </div>
+
+  <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                 <section class="eth-logo swap-logo">
+
+
+
+
+             </section> 
+             <section class="text-center">
+               <img src="https://cryptologos.cc/logos/polygon-matic-logo.svg" style="width: 50px;">
+
+             <label> MATIC Price: </label>
+             <h2>$ <span class="eth-usd"></span></h2>
+
+             </section>
+    
+              <div class="col text-center"><br>
+                <img src="sacbe-white.png" width="100">
+
+                 <h3><strong>Sacbe SAC CS: 20,000,000</strong></h3>
+                 <br>
+                 <p>For those who help donate a project your transaction will be on the ethereum blockchain.<br> And on Oct 2nd 2021, our team will be releasing a 20% of SACBE tokens to our investors. We are still in BETA so visit our site for more updates and information.</p>
+                 <button class="btn btn-primary disable">Buy SAC</button>
+                 <br>
+                 <h5>Release Date 10/2/2021</h5>
+                        <h3><strong>Ethereum Prices:</strong></h3>
+
+
+                  <p>ETH in EUR = <span class="eth-eur"></span></p>
+
+                  <p>ETH in USD = <span class="eth-usd"></span></p>
+
+                    <br/><br/>
+                </div>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div style="padding-top:3%!important;height:560px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=145&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
+  </div>
+ 
+    <div class="tab-pane fade" id="pills-spot" role="tabpanel" aria-labelledby="pills-spot-tab">
+
+    <h3>Select a project to invest:</h3>
+    <section class="row col secpro">
+      <div class="col-lg-3">
+        <img src="san-crisanto-park.png" class="w-100">
+      </div>
+      <div class="col-lg-9">
+              <h4>Public Park Upgrades</h4>
+              <h5>P#001</h5>
+
+              <h5>San Crisanto, Yucatan. Mexico</h5>
+              <p>The community of San Crisanto needs a new upgrade for the public park located in downtown San Crisanto</p>
+              <label><strong>Goal: 25 ETH</strong></label>
+              <a href="https://etherscan.io/address/0xDCc3eD95c123F03657cb80842a0005F2D7bD2A4E" target="_blank">Wallet Fund </a>
+              <p>Progress:</p>
+              <p><span class="text-primary">1. Research</span> 2. Development 3. In Construction 4. Completed</p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+              <br>
+              <p>
+
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+   Updates
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body text-dark">
+    <p><strong>Jan 23, 2021</strong>
+      <br>
+      We just came back from San Crisanto and took a video of the park. Looks like it may need more research on the update. Diego Mora will be getting together with arquitects and developers to start the process of the rendering. Click <a href="https://drive.google.com/file/d/1nr44ga5dbTadxIg36yxlPo5iAgeCpsb0/view?usp=sharing" target="_blank">here</a> to see a video of the park.
+    </p>
+  </div>
+</div>
+              
+              <p></p>
+         </div>     
+    </section>
+  </div>
+</div>
+
+
+
+
+  <div class="theme-sel">
+                  <section class="day">
+
+                    <a href="#" id="day-theme">
+                      <svg id="Capa_1" fill="#FFFFFF" enable-background="new 0 0 512 512"viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m256 360.099c-57.4 0-104.099-46.698-104.099-104.099s46.699-104.099 104.099-104.099 104.099 46.699 104.099 104.099-46.699 104.099-104.099 104.099z"/></g><g><path d="m256 116.071c-8.284 0-15-6.716-15-15v-86.071c0-8.284 6.716-15 15-15s15 6.716 15 15v86.071c0 8.284-6.716 15-15 15z"/></g><g><path d="m146.449 161.449c-3.839 0-7.678-1.464-10.606-4.393l-60.863-60.862c-5.858-5.858-5.858-15.355 0-21.213 5.857-5.858 15.355-5.858 21.213 0l60.862 60.861c5.858 5.858 5.858 15.355 0 21.213-2.928 2.929-6.767 4.394-10.606 4.394z"/></g><g><path d="m101.071 271h-86.071c-8.284 0-15-6.716-15-15s6.716-15 15-15h86.071c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/></g><g><path d="m85.587 441.413c-3.839 0-7.678-1.464-10.606-4.394-5.858-5.858-5.858-15.355 0-21.213l60.862-60.861c5.858-5.857 15.356-5.857 21.213 0 5.858 5.858 5.858 15.355 0 21.213l-60.863 60.862c-2.928 2.928-6.767 4.393-10.606 4.393z"/></g><g><path d="m256 512c-8.284 0-15-6.716-15-15v-86.071c0-8.284 6.716-15 15-15s15 6.716 15 15v86.071c0 8.284-6.716 15-15 15z"/></g><g><path d="m426.413 441.413c-3.839 0-7.678-1.464-10.606-4.393l-60.862-60.861c-5.858-5.858-5.858-15.355 0-21.213 5.857-5.858 15.355-5.858 21.213 0l60.862 60.861c5.858 5.858 5.858 15.355 0 21.213-2.929 2.928-6.768 4.393-10.607 4.393z"/></g><g><path d="m497 271h-86.071c-8.284 0-15-6.716-15-15s6.716-15 15-15h86.071c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/></g><g><path d="m365.551 161.449c-3.839 0-7.678-1.464-10.606-4.394-5.858-5.858-5.858-15.355 0-21.213l60.862-60.861c5.857-5.856 15.355-5.858 21.213 0s5.858 15.355 0 21.213l-60.862 60.861c-2.929 2.929-6.769 4.394-10.607 4.394z"/></g></g></svg>
+                    </a>
+                  </section>
+                  <section class="night">
+                    <a href="#" id="night-theme">
+                      <svg  fill="#FFFFFF" viewBox="-12 0 448 448.04455"  xmlns="http://www.w3.org/2000/svg"><path d="m224.023438 448.03125c85.714843.902344 164.011718-48.488281 200.117187-126.230469-22.722656 9.914063-47.332031 14.769531-72.117187 14.230469-97.15625-.109375-175.890626-78.84375-176-176 .972656-65.71875 37.234374-125.832031 94.910156-157.351562-15.554688-1.980469-31.230469-2.867188-46.910156-2.648438-123.714844 0-224.0000005 100.289062-224.0000005 224 0 123.714844 100.2851565 224 224.0000005 224zm0 0"/></svg>
+
+
+                    </a>
+                  </section>
+                </div>  <br>
+              <small class="" id="location">
+                
+              </small>
+              <p>2021 Sacbe </p>
+</div>
+
+    <script type="text/javascript">
+      //whoosh 2020
+
+ $(document).ready(function() {
+   
+
+     var d = new Date();
+      document.getElementById("location").innerHTML = d;
+
+
+   $("#day-theme").click(function(){
+      $('body').addClass('daytheme')
+    });
+   
+   $("#night-theme").click(function(){
+      $('body').removeClass('daytheme')
+    });
+   
+ });
+
+    </script>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

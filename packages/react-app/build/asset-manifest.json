@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.25516e31.chunk.css",
+    "main.js": "./static/js/main.9dbb1750.chunk.js",
+    "main.js.map": "./static/js/main.9dbb1750.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.aef6d470.js",
+    "runtime-main.js.map": "./static/js/runtime-main.aef6d470.js.map",
+    "static/js/2.895324d9.chunk.js": "./static/js/2.895324d9.chunk.js",
+    "static/js/2.895324d9.chunk.js.map": "./static/js/2.895324d9.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.f1d0d2f5a461d7bffed7dfe69858298f.js": "./precache-manifest.f1d0d2f5a461d7bffed7dfe69858298f.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.25516e31.chunk.css.map": "./static/css/main.25516e31.chunk.css.map",
+    "static/js/2.895324d9.chunk.js.LICENSE.txt": "./static/js/2.895324d9.chunk.js.LICENSE.txt",
+    "static/media/ethereumLogo.png": "./static/media/ethereumLogo.0020ce37.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aef6d470.js",
+    "static/js/2.895324d9.chunk.js",
+    "static/css/main.25516e31.chunk.css",
+    "static/js/main.9dbb1750.chunk.js"
+  ]
+}

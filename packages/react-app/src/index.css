@@ -1,0 +1,287 @@
+#root header {
+  background: none!important;
+} 
+
+  body{
+    color: white;
+background: #0b171b;
+font-family: 'Exo', sans-serif;
+  }
+
+  h1{
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+  }
+
+  .theme-sel
+  {
+display: block;
+    width: 77px;
+    height: 41px;
+    background: #3a3a3a;
+    border-radius: 15px;
+    padding: 10px;
+}
+    /*animated bk*/
+
+
+.circle {
+    position: absolute;
+    border-radius: 53px;
+    filter: blur(23px);
+    background: #00c5ff;
+    animation: ripple 7s infinite;
+    /* box-shadow: 0px 0px 1px 0px #508fb9; */
+}
+
+.small {
+    width: 106px;
+    height: 126px;
+    left: -54px;
+    bottom: -100px;
+}
+.secpro{
+  background: #00ffff0d;
+    padding: 3%;
+    border-radius: 9px;
+}
+.medium{
+
+}
+
+.large{
+
+}
+
+.xlarge{
+
+}
+
+.xxlarge{
+
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.5;
+}
+
+.shade3{
+  opacity: 0.7;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.8);
+  }
+  
+  50%{
+    transform: scale(1.2);
+  }
+  
+  100%{
+    transform: scale(0.8);
+  }
+}
+/*custom*/
+.coinx svg{
+  width: 28px;padding-top: 10px;
+}
+.col-coins, .col-parties{
+display: inline-block;
+width: 49%;
+vertical-align: top;
+}
+.swap-logo{
+  max-width: 67px!important;
+  padding-top: 7%;
+}
+.eth-logo{
+
+      max-width: 133px;
+    margin: auto;
+    display: block;
+
+}
+label{
+  padding-top: 10px;
+  display: block;
+
+}
+.daytheme .content-inputs {
+  background: #f3f3f3;
+}
+.daytheme input[type="text" ] {
+  background: #f5f5f5;
+  color: black;
+      width: 51%;
+}
+.content-inputs{
+  margin: auto;
+    display: block;
+    text-align: center;
+    background: #19232b;
+    max-width: 461px;
+    padding: 6px;
+  }
+
+    input[type="text" ] {
+margin-top: 10px;
+ color: white;
+height: 50px;
+    border-radius: 1px;
+        background: #172931;
+    border: 0px solid #eaeaea;
+    box-shadow: 1px 0px 8px 0px #157ca0;
+    width: 43%;
+}
+a{
+  color: #00daff;
+    text-decoration: none;
+}
+.success{
+  color:#00ff67!important;
+}
+.btn{
+    background: #00c1ff;
+    padding: 18px 75px;
+    color: aliceblue;
+    width: 300px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+}
+
+.day svg{
+  width: 1.5rem;
+  padding: 2%;
+  float:right;
+}
+.night svg{
+width: 1.4rem;
+padding: 3px;
+}
+#location{
+  float: right;
+}
+body.daytheme {
+  background: white!important;
+  color: black!important;
+}
+.nav-link {
+    display: block;
+    padding: .1rem .67rem;
+}
+#root{
+	position: absolute;
+	    left: 83vw;
+}
+.logo-menu{
+	display: block;
+    position: absolute;
+    width: 30px;
+}
+.logo-menu img{
+	width: 66px;
+}
+.text-center{
+text-align: center;
+}
+.modal-content{
+	background-color: #060d0f;
+}
+#root button{
+    background-color: #1284ab!important;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff!important;
+    cursor: pointer;
+    font-size: 10px!important;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    margin: 3px 14px;
+    padding: 2px 24px!important;
+}
+#root header{
+	background-color: #0c171c!important;
+	min-height: 34px!important;
+}
+video{
+	width: 98%;
+	position: absolute;
+    z-index: -1;
+    display: block;
+}
+.howorks{
+	padding-top: 15%;
+}
+.moreinfo{
+	margin-top: 48%; 
+}
+.tab-content{
+	min-height: 690px!important;
+	padding-top: 60px;
+
+    overflow: auto;
+}
+#pills-contact{
+
+}
+#pills-contact h1{
+	padding-top: 18%;
+	font-size: 4rem;
+	text-shadow: 3px 3px black;
+}
+#pills-contact h2{
+
+	text-shadow: 3px 3px black;
+}
+#pills-contact p{
+		text-shadow: 1px 1px black;
+	max-width: 500px;
+	margin: auto;
+	padding: 20px;
+    background: #31313178;
+}
+.daytheme .UUphb {
+	background-color: white!important;
+}
+.daytheme .logo-menu img{
+	filter: invert(1)!important;
+}
+@media only screen and (max-width: 500px)  {
+	#root {
+    position: absolute;
+    left: 60vw;
+}
+.btn{
+  width: 236px;
+}
+video {
+    width: 92%;}
+    #pills-contact h1{
+	padding-top: 18%;
+	font-size: 2rem;
+	text-shadow: 3px 3px black;
+}
+#pills-contact h2{
+	font-size: 1.5rem;
+}
+} 
+
+@media only screen and (max-width: 375px)  {
+.btn{
+  width: 199px;
+}
+} 
